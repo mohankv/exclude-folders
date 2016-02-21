@@ -38,6 +38,7 @@ define(function (require, exports, module) {
             return false;
         }
         
-        return !name.match(/node_modules|www/);
+        //return !name.match(/node_modules|www/);
+        return !name.match(/^(node_modules|www)$/);
     };
 });
